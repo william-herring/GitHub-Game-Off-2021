@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
 
         Vector2 direction = new Vector2(horizontal, vertical) * (moveSpeed * Time.deltaTime);
+        //use addForce dummy hahahahahahahaha
 
         rb.velocity = direction;
     }
