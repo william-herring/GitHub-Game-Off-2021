@@ -785,6 +785,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2387877854857499761, guid: 201d0dca51f744546a7b77a67e95fd23, type: 3}
   bulletSpawnTransform: {fileID: 1656190870}
   ammoText: {fileID: 1369467683}
+  turnSpeed: 5
   cooldownTime: 0.2
   ammunition: 30
   bulletSpeed: 12
@@ -2611,7 +2612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1863914585}
   moveSpeed: 400
-  turnSpeed: 1
 --- !u!58 &1863914584
 CircleCollider2D:
   m_ObjectHideFlags: 0
