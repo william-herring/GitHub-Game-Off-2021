@@ -3,6 +3,10 @@
 This is a game made for the GitHub Game Off 2021. All code and art has been created during the jam period by <a href="https://github.com/william-herring">william-herring</a> and <a href="https://github.com/cheeeeeeez">cheeeeeeez</a>.
 Made with Unity game engine.
 
+# Requirements
+
+Please install Text Mesh Pro after cloning. Do this via Package Manager (Window > Package Manager)
+
 # Acknowledgements
 
 - Lee Reilly and GitHub for hosting this awesome jam
