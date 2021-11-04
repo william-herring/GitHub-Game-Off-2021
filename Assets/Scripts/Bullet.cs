@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float damage;
+    
     [SerializeField] private float despawnTime = 5f;
     private float despawn;
 
@@ -19,5 +21,15 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject); //Destroys this bullet instance
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Enemy"))
+        {
+            other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+        }
+        
+        Destroy(gameObject);
     }
 }

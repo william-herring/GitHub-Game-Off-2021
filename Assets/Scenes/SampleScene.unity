@@ -542,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAABQIewwoUkYSQIAAPMEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMlu2zAQ/RWD56aQlyzurVUcp4fERpwiF11ocmQRpkiBS7zB/94hJVmKi55EzHszfG9mqBMRylbAnDZzI/iL5kB+DEg4k2+DDnyGPd1otRJHaDkfgrsikGjkvFEnNMaHIc3qEpwR7KfayEBOMOiVyLUpZ3wDqbbOYjin0gJCRruQrTB0GpA9fm6mIeWAp9F9OB3xNE0GZzwyUA5MR22JLa1mecUkLSvgQXJHHiYtHU+RqNBOwwnSmZZS2EYLcYcqek1pZT06QQIXFL1FAYFfgNgULujsJy/y3IJrRBl6eBQGW1RXJb903beS2m2t7JNKDxfpdcmXf9CbYYRzo8vn9tbajysE277RA6PW9draDz9+le3VjsotXUv4KEC96rnRXnEEnfEh1VsYPfZKXZylBbBtx6u1XgV99f/pBBPnaH6fSlGuA/R9UgdWUsd2x9mDwcH8RsVxM2xTAqNBxR8L73TTX6EGeBLGOoQamyrIW2tvApXMYtOCG+9SbRTEcCO6AkWlOyyxjLue4BXWu/YKeaLhsTSXN1j7Bq5SYrjjJ8kVtNS7y7RsoXcvYIuFd1Io6EQH4BX7lGql6gXr96RNW3mTU9ZL23jBv+4WuX8Y0/GQJmx0t57AaHpze5fz8YjeJmxyP53wBxKXTyj0SeWyFtq0B6emuuIKF639hwzmhlZx2bmhu7k4lrrXcqFyvWIGQC3qChfhYPASfJR8xgU2aAXOCRXnTU4ZkZptgWeXQll0Ots7Q7OuSkYq8aldiGQkjT+NjJzJ+S9QSwMEFAAACAgAAFAh7DHrCOttAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tJK5hXGisWGiQbKRWZJJqpGlrqlZWoqxUaKpQbKJuaVJioVSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAFAh7DChSRhJAgAA8wQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAFAh7DHrCOttAAAAeAAAAAkAJAAAAAAAAAAAAAAAlgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABOAwAAAAA=
+    dataString: UEsDBBQAAAgIAABQIewz5QZJTgIAAPQEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMty2jAU/RVG65IxjyTQXWsI6SIJE9LJxhshXWMNsuTRI0Ay/HuvZBu7dLpCnHPu1bkP+YsIZStgTpuVEfxJcyDfByScybdBRz7Cke602ohPaDXvgrsiiGjUvFInNOKjEGZ1Cc4I9kPtZBAnCHolcm3KJd9Bqq2zCOdUWkDKaBeiFUJfA3LEn+E8hJzwNL4Pp088zZPBGY8MlAPTSVthK6tVXjFJywp4sNyJR0krx1MUKiyn0QTrTEspbOOFuFMVa01pZT1WggIuKNYWDYxuJggUIHaFC0774S95bsE1tgw9LYTBJtV5yU9dd66kdl97+6DSh5tm0VOd8ukfdjiKdG50+djeWlfkCsH2r/TEqHW9xvbhRc94bNCByj3dSngvQD3rldFecSSd8SHUWxgvur+XwtIC2L7Da6tXoK/+P55QwznWfkylKLeBupnWwEbq2O84fDA4mV9oOK6GbVIgGlz8tvBGd/0daogHYaxDqqlSBXtb7U2QkmXsWajGu1QbBRFuTFegqHSnNaZx1wO84nrXXjEPNLyW5vKGax/BVUiEO32SXFFrfbgMyxb68AS2ePFOCgWd6UA8Y59SrVS9X/2etGEbb3LKemE7L/jfq0XuZxM6GdGEje+2UxjPh7d3OZ+M6W3CpvfzKZ+RuHtCYZ1UrmujTXtwaqpLrnDP2o/IYGVoFXedG3pYic9S91ouVK43zAColzrDxTgYvARfJV9ygQ3agHNCxXmTr4xIzfbAs0uiLFa6PDpDsy5LRirxoV1AMpLGr0ZGzuT8B1BLAwQUAAAICAAAUCHsMesI620AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0krmFcaKxYaJBspFZkkmqkaWuqVlairFRoqlBsom5pUmKhVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAUCHsM+UGSU4CAAD0BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAUCHsMesI620AAAB4AAAACQAkAAAAAAAAAAAAAACbAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFMDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -555,7 +555,7 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
+  logPathResults: 0
   maxNearestNodeDistance: 100
   scanOnStartup: 1
   fullGetNearestSearch: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -872,6 +872,7 @@ MonoBehaviour:
   bulletSpawnTransform: {fileID: 1656190870}
   ammoText: {fileID: 1369467683}
   cooldownTime: 0.2
+  damage: 1.1
   ammunition: 30
   bulletSpeed: 12
 --- !u!1 &1369467681
@@ -1265,7 +1266,7 @@ GameObject:
   - component: {fileID: 1760872546}
   - component: {fileID: 1760872545}
   - component: {fileID: 1760872544}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,3 +2824,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1863914582}
+--- !u!1 &2049939660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049939662}
+  - component: {fileID: 2049939661}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2049939661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049939660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b07fa33961a04ccdbb0ad762f9f3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 1863914582}
+  commonTroops:
+  - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
+  rareTroops:
+  - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
+  arialTroops:
+  - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
+  armySize: 5
+  enemies: 0
+--- !u!4 &2049939662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049939660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

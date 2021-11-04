@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private Transform bulletSpawnTransform; //Stores the spawn location of the bullet
     [SerializeField] private TextMeshProUGUI ammoText; //Stores TMP component for ammo UI
     [SerializeField] private float cooldownTime = 1.3f;
+    [SerializeField] private float damage = 1.1f;
 
     public float ammunition = 30f;
     public float bulletSpeed = 12f;
@@ -42,7 +43,7 @@ public class Gun : MonoBehaviour
         GameObject obj = Instantiate(bulletPrefab, bulletSpawnTransform.position, Quaternion.identity);
         
         obj.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
-        Debug.Log(obj.GetComponent<Rigidbody2D>().velocity);
+        obj.GetComponent<Bullet>().damage = damage;
 
         ammunition -= 1;
         ammoText.text = ammunition.ToString();
