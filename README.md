@@ -4,7 +4,7 @@ This is a game made for the GitHub Game Off 2021. All code and art has been crea
 Made with Unity game engine.
 
 # Requirements
-Unity editor version is 2020.3.21f1
+Unity editor version is 2020.3.21f1 <br>
 Please install TextMeshPro after cloning. You can do this via Package Manager (Window > Package Manager > Search "Text Mesh Pro").
 
 # Acknowledgements
