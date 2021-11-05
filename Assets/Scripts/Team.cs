@@ -2,10 +2,8 @@ using System;
 using Pathfinding;
 using System.Linq;
 using UnityEngine;
-using System.Collections;
-using Random = UnityEngine.Random;
 
-public class Enemy : MonoBehaviour
+public class Team : MonoBehaviour
 {
     public float health;
     public GameManager gm;
@@ -14,7 +12,6 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(PickTarget());
         _targetCollider = GetComponent<AIDestinationSetter>().target.GetComponent<Collider2D>();
     }
 
@@ -41,18 +38,8 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            gm.enemies -= 1;
+            gm.team -= 1;
             Destroy(gameObject);
         }
-    }
-
-    IEnumerator PickTarget()
-    {
-        yield return new WaitForSeconds(0.2f);
-        
-        GameObject[] all = GameObject.FindGameObjectsWithTag("Team");
-        Transform target = all[Random.Range(0, all.Length)].transform;
-
-        GetComponent<AIDestinationSetter>().target = target;
     }
 }

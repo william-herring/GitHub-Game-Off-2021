@@ -1215,6 +1215,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1579044367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579044368}
+  m_Layer: 0
+  m_Name: TeamSpawnLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579044368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579044367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656190869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3503,7 +3533,7 @@ GameObject:
   - component: {fileID: 1863914584}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Team
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3746,7 +3776,9 @@ MonoBehaviour:
   playerTransform: {fileID: 1863914582}
   spawnRadius: 5
   enemies: 0
+  team: 0
   enemySpawnLocation: {fileID: 1361333583}
+  teamSpawnLocation: {fileID: 1579044368}
   commonTroops:
   - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
   rareTroops:
