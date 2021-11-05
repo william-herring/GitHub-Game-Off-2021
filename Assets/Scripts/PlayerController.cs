@@ -1,5 +1,4 @@
 using System;
-using Pathfinding.Ionic.Zip;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour

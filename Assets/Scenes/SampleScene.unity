@@ -757,7 +757,7 @@ GameObject:
   - component: {fileID: 1227474357}
   - component: {fileID: 1227474356}
   - component: {fileID: 1227474358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1224,7 +1224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1656190870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletSpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3501,9 +3501,9 @@ GameObject:
   - component: {fileID: 1863914583}
   - component: {fileID: 1863914585}
   - component: {fileID: 1863914584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

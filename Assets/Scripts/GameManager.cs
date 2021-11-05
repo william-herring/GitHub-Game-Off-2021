@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    public Transform playerTransform;
+    public Transform playerTransform; //TODO: pick random troop target
     public float spawnRadius = 5f;
     public int enemies;
 
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < enemiesRequired; i++)
             {
                 int c = Random.Range(0, 11);
-                Vector3 spawnLocation = enemySpawnLocation.position + Random.onUnitSphere * spawnRadius;
+                Vector3 spawnLocation = enemySpawnLocation.position + Random.onUnitSphere * spawnRadius; //Picks a random spawn position inside a circle at the colony
 
                 if (c <= 6)
                 {

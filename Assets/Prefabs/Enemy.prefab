@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 721250365143106690}
   - component: {fileID: 1531312086773469691}
   - component: {fileID: 3617390971920042353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+  gm: {fileID: 0}
 --- !u!58 &3617390971920042353
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -152,7 +153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3995795242521853216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletSpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +185,7 @@ GameObject:
   - component: {fileID: 3995795242626795223}
   - component: {fileID: 3995795242626795241}
   - component: {fileID: 3995795242626795222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3995795243099489882}
   - component: {fileID: 3995795243099489883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
