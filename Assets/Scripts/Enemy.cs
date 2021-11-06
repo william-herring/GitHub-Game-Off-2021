@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         StartCoroutine(PickTarget());
-        _targetCollider = GetComponent<AIDestinationSetter>().target.GetComponent<Collider2D>();
     }
 
     private void FixedUpdate()
@@ -54,5 +53,7 @@ public class Enemy : MonoBehaviour
         Transform target = all[Random.Range(0, all.Length)].transform;
 
         GetComponent<AIDestinationSetter>().target = target;
+        
+        _targetCollider = GetComponent<AIDestinationSetter>().target.GetComponent<Collider2D>();
     }
 }
