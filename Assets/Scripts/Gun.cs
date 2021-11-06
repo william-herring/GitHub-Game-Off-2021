@@ -42,7 +42,7 @@ public class Gun : MonoBehaviour
         
         GameObject obj = Instantiate(bulletPrefab, bulletSpawnTransform.position, Quaternion.identity);
         
-        obj.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+        obj.GetComponent<Rigidbody2D>().velocity = transform.up * bulletSpeed;
         obj.GetComponent<Bullet>().damage = damage;
 
         ammunition -= 1;
