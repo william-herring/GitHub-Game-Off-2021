@@ -5,23 +5,23 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb; //Stores attached RigidBody2D
-    [SerializeField] private float moveSpeed, turnSpeed; //Stores player speeds
+    [SerializeField] private float moveSpeed; //Stores player speed
 
     [SerializeField] private Animator anim;
 
-    private readonly Dictionary<Vector2, string> walkingStates = new Dictionary<Vector2, string>();
+    [SerializeField] private readonly Dictionary<Vector2, int> walkingStates = new Dictionary<Vector2, int>(); //Maps vector inputs to the z axis rotation
 
     private void Awake()
     {
         //Setting dictionary items
-        walkingStates.Add(Vector2.up, "north");
-        walkingStates.Add(Vector2.down, "south");
-        walkingStates.Add(Vector2.right, "east");
-        walkingStates.Add(Vector2.left, "west");
-        walkingStates.Add(new Vector2(1, 1), "northEast");
-        walkingStates.Add(new Vector2(-1, 1), "northWest");
-        walkingStates.Add(new Vector2(1, -1), "southEast");
-        walkingStates.Add(new Vector2(-1, -1), "southWest");
+        walkingStates.Add(Vector2.up, 0);
+        walkingStates.Add(Vector2.down, 180);
+        walkingStates.Add(Vector2.right, -90);
+        walkingStates.Add(Vector2.left, 90);
+        walkingStates.Add(new Vector2(1, 1), -45);
+        walkingStates.Add(new Vector2(-1, 1), 45);
+        walkingStates.Add(new Vector2(1, -1), 225);
+        walkingStates.Add(new Vector2(-1, -1), 135);
     }
     private Vector2 currentState = Vector2.up;
 
@@ -31,26 +31,13 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
 
         Vector2 direction = new Vector2(horizontal, vertical) * (moveSpeed * Time.deltaTime);
+        rb.velocity = direction;
+
+        anim.SetBool("Walking", direction != Vector2.zero);
 
         if (direction != Vector2.zero)
         {
-            if (currentState != new Vector2(horizontal, vertical))
-            {
-                anim.SetBool(walkingStates[currentState], false);
-            }
-            
-            anim.SetBool(walkingStates[new Vector2(horizontal, vertical)], true);
-
-            currentState = new Vector2(horizontal, vertical);
+            transform.rotation = Quaternion.Euler(0, 0, walkingStates[new Vector2(horizontal, vertical)]);
         }
-        else
-        {
-            foreach (var keys in walkingStates.Values)
-            {
-                anim.SetBool(keys, false);
-            }
-        }
-
-        rb.velocity = direction;
     }
 }
