@@ -3658,6 +3658,7 @@ GameObject:
   - component: {fileID: 1863914583}
   - component: {fileID: 1863914585}
   - component: {fileID: 1863914584}
+  - component: {fileID: 1863914586}
   m_Layer: 6
   m_Name: Player
   m_TagString: Team
@@ -3746,6 +3747,7 @@ MonoBehaviour:
   rb: {fileID: 1863914585}
   moveSpeed: 400
   turnSpeed: 0.8
+  anim: {fileID: 1863914586}
 --- !u!58 &1863914584
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3783,6 +3785,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1863914586
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863914580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3635a7abf37774cad905dbfa52bb9038, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1914074321
 GameObject:
   m_ObjectHideFlags: 0
