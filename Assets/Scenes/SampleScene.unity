@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121252821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.257, z: 0}
+  m_LocalPosition: {x: 0, y: -0.243, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1227474355}
@@ -817,7 +817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227474354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.511, z: -1}
+  m_LocalPosition: {x: 0, y: 0.252, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1656190870}
@@ -3656,6 +3656,7 @@ GameObject:
   - component: {fileID: 1863914582}
   - component: {fileID: 1863914581}
   - component: {fileID: 1863914583}
+  - component: {fileID: 1863914587}
   - component: {fileID: 1863914585}
   - component: {fileID: 1863914584}
   - component: {fileID: 1863914586}
@@ -3746,7 +3747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1863914585}
   moveSpeed: 300
-  turnSpeed: 0.8
   anim: {fileID: 1863914586}
 --- !u!58 &1863914584
 CircleCollider2D:
@@ -3804,6 +3804,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1863914587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863914580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef98249ac903e43b5b370a45bd4615c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1914074321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b07fa33961a04ccdbb0ad762f9f3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1863914582}
   spawnRadius: 5
   enemies: 0
   team: 0
@@ -3931,9 +3942,10 @@ MonoBehaviour:
   - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
   rareTroops:
   - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
-  arialTroops:
+  aerialTroops:
   - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
   armySize: 5
+  bulletPrefab: {fileID: 2387877854857499761, guid: 201d0dca51f744546a7b77a67e95fd23, type: 3}
 --- !u!4 &2049939662
 Transform:
   m_ObjectHideFlags: 0

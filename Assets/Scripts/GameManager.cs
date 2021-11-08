@@ -5,7 +5,6 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    public Transform playerTransform; //TODO: pick random troop target
     public float spawnRadius = 5f;
     public int enemies;
     public int team = 1; //Equal to 1 to account for player
@@ -14,8 +13,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform teamSpawnLocation;
     [SerializeField] private List<GameObject> commonTroops; //This array stores the common troops (60% spawn rate)
     [SerializeField] private List<GameObject> rareTroops; //This array stores the rare troops (30% spawn rate)
-    [SerializeField] private List<GameObject> arialTroops; //This array stores the arial troops such as wasps (10% spawn rate)
+    [SerializeField] private List<GameObject> aerialTroops; //This array stores the arial troops such as wasps (10% spawn rate)
     [SerializeField] private int armySize;
+
+    [SerializeField] private GameObject bulletPrefab;
 
     private void Update()
     {
@@ -37,8 +38,8 @@ public class GameManager : MonoBehaviour
                     
                     troop.tag = "Enemy";
                     troop.AddComponent<Enemy>().health = 4f;
-                    //troop.GetComponent<AIDestinationSetter>().target = playerTransform;
                     troop.GetComponent<Enemy>().gm = this;
+                    troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
                     enemies += 1;
                 } 
                 else if (c > 6)
@@ -46,12 +47,12 @@ public class GameManager : MonoBehaviour
                     if (c < 90)
                     {
                         //Spawn arial troop
-                        GameObject troop = Instantiate(arialTroops[Random.Range(0, commonTroops.Count)], spawnLocation, Quaternion.identity);
+                        GameObject troop = Instantiate(aerialTroops[Random.Range(0, commonTroops.Count)], spawnLocation, Quaternion.identity);
                         
                         troop.tag = "Enemy";
                         troop.AddComponent<Enemy>().health = 2f;
-                        //troop.GetComponent<AIDestinationSetter>().target = playerTransform;
                         troop.GetComponent<Enemy>().gm = this;
+                        troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
                         enemies += 1;
                     }
                     else
@@ -61,8 +62,8 @@ public class GameManager : MonoBehaviour
 
                         troop.tag = "Enemy";
                         troop.AddComponent<Enemy>().health = 5f;
-                        //troop.GetComponent<AIDestinationSetter>().target = playerTransform;
                         troop.GetComponent<Enemy>().gm = this;
+                        troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
                         enemies += 1;
                     }
                 }
@@ -92,18 +93,20 @@ public class GameManager : MonoBehaviour
                     troop.AddComponent<Team>().health = 4f;
                     troop.GetComponent<AIDestinationSetter>().target = target;
                     troop.GetComponent<Team>().gm = this;
+                    troop.GetComponent<Team>().bulletPrefab = bulletPrefab;
                     team += 1;
                 } else if (c > 6)
                 {
                     if (c < 90)
                     {
                         //Spawn arial troop
-                        GameObject troop = Instantiate(arialTroops[Random.Range(0, commonTroops.Count)], spawnLocation, Quaternion.identity);
+                        GameObject troop = Instantiate(aerialTroops[Random.Range(0, commonTroops.Count)], spawnLocation, Quaternion.identity);
                     
                         troop.tag = "Team";
                         troop.AddComponent<Team>().health = 4f;
                         troop.GetComponent<AIDestinationSetter>().target = target;
                         troop.GetComponent<Team>().gm = this;
+                        troop.GetComponent<Team>().bulletPrefab = bulletPrefab;
                         team += 1;
                     }
                     else
@@ -115,6 +118,7 @@ public class GameManager : MonoBehaviour
                         troop.AddComponent<Team>().health = 4f;
                         troop.GetComponent<AIDestinationSetter>().target = target;
                         troop.GetComponent<Team>().gm = this;
+                        troop.GetComponent<Team>().bulletPrefab = bulletPrefab;
                         team += 1;
                     }
                 }
