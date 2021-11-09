@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> rareTroops; //This array stores the rare troops (30% spawn rate)
     [SerializeField] private List<GameObject> aerialTroops; //This array stores the arial troops such as wasps (10% spawn rate)
     [SerializeField] private int armySize;
-
+    
     [SerializeField] private GameObject bulletPrefab;
+    public GameObject deathScreen;
 
     private void Update()
     {
