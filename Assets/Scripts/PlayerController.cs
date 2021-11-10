@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
         walkingStates.Add(new Vector2(1, -1), 225);
         walkingStates.Add(new Vector2(-1, -1), 135);
     }
-    private Vector2 currentState = Vector2.up;
 
     private void FixedUpdate()
     {
