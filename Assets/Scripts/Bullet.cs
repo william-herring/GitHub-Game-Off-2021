@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public bool isPlayerBullet;
     public float damage;
     
     [SerializeField] private float despawnTime = 5f;
@@ -28,6 +29,11 @@ public class Bullet : MonoBehaviour
         if (other.collider.CompareTag("Enemy"))
         {
             other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+
+            if (isPlayerBullet)
+            {
+                GameObject.Find("GameManager").GetComponent<GameManager>().credits += 1;
+            }
         }
 
         if (other.gameObject.CompareTag("Team"))
