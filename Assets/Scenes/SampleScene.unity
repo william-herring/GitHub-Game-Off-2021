@@ -535,7 +535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707f054d1ab1f4ab49793284f7c549c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableColor: {r: 1, g: 1, b: 1, a: 0}
+  troopSelectionManager: {fileID: 1940998834}
+  availableColor: {r: 1, g: 1, b: 1, a: 1}
   unavailableColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   selectionIndicator: {fileID: 1117996095}
   gm: {fileID: 2049939661}
@@ -545,6 +546,7 @@ MonoBehaviour:
   - {fileID: 1521169338}
   - {fileID: 287336903}
   itemCost: 0
+  index: 0
 --- !u!1 &228975066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707f054d1ab1f4ab49793284f7c549c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableColor: {r: 1, g: 1, b: 1, a: 0}
+  troopSelectionManager: {fileID: 1940998834}
+  availableColor: {r: 1, g: 1, b: 1, a: 1}
   unavailableColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   selectionIndicator: {fileID: 1025669291}
   gm: {fileID: 2049939661}
@@ -1159,6 +1162,7 @@ MonoBehaviour:
   - {fileID: 1986510873}
   - {fileID: 1521169338}
   itemCost: 100
+  index: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,7 +1472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707f054d1ab1f4ab49793284f7c549c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableColor: {r: 1, g: 1, b: 1, a: 0}
+  troopSelectionManager: {fileID: 1940998834}
+  availableColor: {r: 1, g: 1, b: 1, a: 1}
   unavailableColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   selectionIndicator: {fileID: 1986510873}
   gm: {fileID: 2049939661}
@@ -1478,6 +1483,7 @@ MonoBehaviour:
   - {fileID: 1521169338}
   - {fileID: 287336903}
   itemCost: 25
+  index: 2
 --- !u!1 &835006872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707f054d1ab1f4ab49793284f7c549c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableColor: {r: 1, g: 1, b: 1, a: 0}
+  troopSelectionManager: {fileID: 1940998834}
+  availableColor: {r: 1, g: 1, b: 1, a: 1}
   unavailableColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   selectionIndicator: {fileID: 1025669291}
   gm: {fileID: 2049939661}
@@ -1861,6 +1868,7 @@ MonoBehaviour:
   - {fileID: 1521169338}
   - {fileID: 287336903}
   itemCost: 15
+  index: 1
 --- !u!1 &1117996095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +2100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272825027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610329218}
@@ -60698,7 +60706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1500486214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61201,7 +61209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760872540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610329218}
@@ -63650,6 +63658,7 @@ GameObject:
   - component: {fileID: 1940998831}
   - component: {fileID: 1940998833}
   - component: {fileID: 1940998832}
+  - component: {fileID: 1940998834}
   m_Layer: 5
   m_Name: TroopSelectionScreen
   m_TagString: Untagged
@@ -63717,6 +63726,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940998830}
   m_CullTransparentMesh: 1
+--- !u!114 &1940998834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940998830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa17ac3960534290b86f105c9a8e9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSelectionIndex: 0
+  playerTroopPrefabs: []
 --- !u!1 &1986510873
 GameObject:
   m_ObjectHideFlags: 0
@@ -63997,7 +64020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707f054d1ab1f4ab49793284f7c549c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableColor: {r: 1, g: 1, b: 1, a: 0}
+  troopSelectionManager: {fileID: 1940998834}
+  availableColor: {r: 1, g: 1, b: 1, a: 1}
   unavailableColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   selectionIndicator: {fileID: 1521169338}
   gm: {fileID: 2049939661}
@@ -64007,6 +64031,7 @@ MonoBehaviour:
   - {fileID: 1986510873}
   - {fileID: 287336903}
   itemCost: 50
+  index: 3
 --- !u!1 &2133560260
 GameObject:
   m_ObjectHideFlags: 0

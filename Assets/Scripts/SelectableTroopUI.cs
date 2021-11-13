@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class SelectableTroopUI : MonoBehaviour
 {
+    public TroopSelectionManager troopSelectionManager;
+    
     [SerializeField] private Color availableColor;
     [SerializeField] private Color unavailableColor;
     [SerializeField] private GameObject selectionIndicator;
@@ -13,6 +15,7 @@ public class SelectableTroopUI : MonoBehaviour
     private bool isAvailable;
 
     public int itemCost;
+    public int index;
 
     private void Start()
     {
@@ -26,6 +29,7 @@ public class SelectableTroopUI : MonoBehaviour
         if (isAvailable)
         {
             selectionIndicator.SetActive(true);
+            troopSelectionManager.SetSelection(index);
 
             foreach (var i in otherSelectionIndicators)
             {
