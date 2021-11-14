@@ -4,7 +4,7 @@ This is a game made for the GitHub Game Off 2021. All code and art has been crea
 Made with Unity game engine.
 
 # Requirements
-Unity editor version is 2020.3.21f1, other editor versions may work although it is not recommended.
+Unity editor version is 2020.3.22f1, other editor versions may work although it is not recommended.
 
 # Acknowledgements
 
