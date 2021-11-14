@@ -7,12 +7,6 @@ public class Bullet : MonoBehaviour
     public float damage;
     
     [SerializeField] private float despawnTime = 5f;
-    private float despawn;
-
-    private void Start()
-    {
-        despawn = despawnTime;
-    }
 
     private void Update()
     {
@@ -32,7 +26,7 @@ public class Bullet : MonoBehaviour
 
             if (isPlayerBullet)
             {
-                GameObject.Find("GameManager").GetComponent<GameManager>().credits += 1;
+                GameObject.Find("GameManager").GetComponent<GameManager>().credits += 2;
             }
         }
 

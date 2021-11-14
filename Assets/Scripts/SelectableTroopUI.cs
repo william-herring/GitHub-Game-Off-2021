@@ -12,29 +12,28 @@ public class SelectableTroopUI : MonoBehaviour
     [SerializeField] private GameManager gm;
     [SerializeField] private GameObject[] otherSelectionIndicators;
 
-    private bool isAvailable;
+    private bool _isAvailable;
 
     public int itemCost;
     public int index;
 
     private void Start()
     {
-        isAvailable = gm.credits >= itemCost;
+        _isAvailable = gm.credits >= itemCost;
         
-        GetComponent<Image>().color = isAvailable ? availableColor : unavailableColor;
+        GetComponent<Image>().color = _isAvailable ? availableColor : unavailableColor;
     }
 
     public void OnClick()
     {
-        if (isAvailable)
-        {
-            selectionIndicator.SetActive(true);
-            troopSelectionManager.SetSelection(index);
+        if (!_isAvailable) return; //Returns to reduce nesting
+        
+        selectionIndicator.SetActive(true);
+        troopSelectionManager.SetSelection(index);
 
-            foreach (var i in otherSelectionIndicators)
-            {
-                i.SetActive(false);
-            }
+        foreach (var i in otherSelectionIndicators)
+        {
+            i.SetActive(false);
         }
     } 
 }

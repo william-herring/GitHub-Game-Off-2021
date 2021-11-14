@@ -63286,6 +63286,8 @@ MonoBehaviour:
   currentSelectionIndex: 0
   playerTroopPrefabs:
   - {fileID: 3449285883091387336, guid: caa5603f5f71846d680b2b192ebc0f15, type: 3}
+  - {fileID: 3449285883091387336, guid: caa5603f5f71846d680b2b192ebc0f15, type: 3}
+  - {fileID: 1703963547025530713, guid: f29c6f6d1c6064b979e4a5f0ebc67772, type: 3}
   playerCam: {fileID: 392458057}
   minimapCam: {fileID: 1914074325}
   gm: {fileID: 2049939661}

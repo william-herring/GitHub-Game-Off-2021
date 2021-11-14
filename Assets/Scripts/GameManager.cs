@@ -150,5 +150,5 @@ public class GameManager : MonoBehaviour
         {
             credits -= troopCosts[troopType];
         }
-    } 
+    }
 }
