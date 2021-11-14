@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> aerialTroops; //This array stores the arial troops such as wasps (10% spawn rate)
     [SerializeField] private int armySize;
     [SerializeField] private TextMeshProUGUI creditText;
+    [SerializeField] private GameObject bulletCollectable;
 
     [SerializeField] private GameObject bulletPrefab;
     public GameObject deathScreen;
@@ -58,6 +59,7 @@ public class GameManager : MonoBehaviour
                     troop.AddComponent<Enemy>().health = 4f;
                     troop.GetComponent<Enemy>().gm = this;
                     troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
+                    troop.GetComponent<Enemy>().bulletCollectable = bulletCollectable;
                     enemies += 1;
                 } 
                 else if (c > 6)
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
                         troop.AddComponent<Enemy>().health = 2f;
                         troop.GetComponent<Enemy>().gm = this;
                         troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
+                        troop.GetComponent<Enemy>().bulletCollectable = bulletCollectable;
                         enemies += 1;
                     }
                     else
@@ -82,6 +85,7 @@ public class GameManager : MonoBehaviour
                         troop.AddComponent<Enemy>().health = 5f;
                         troop.GetComponent<Enemy>().gm = this;
                         troop.GetComponent<Enemy>().bulletPrefab = bulletPrefab;
+                        troop.GetComponent<Enemy>().bulletCollectable = bulletCollectable;
                         enemies += 1;
                     }
                 }
