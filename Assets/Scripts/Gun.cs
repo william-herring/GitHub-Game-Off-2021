@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -14,10 +15,11 @@ public class Gun : MonoBehaviour
 
     private float cooldown;
 
-    private void Awake()
+    private void Start()
     {
         cooldown = cooldownTime;
         ammoText.text = ammunition.ToString();
+        ammoText = GameObject.Find("AmmoIndicator").GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()

@@ -38,7 +38,7 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject.CompareTag("Team"))
         {
-            if (other.gameObject.name != "Player")
+            if (other.gameObject.name[0] != 'P')
             {
                 other.gameObject.GetComponent<Team>().TakeDamage(damage);
             }

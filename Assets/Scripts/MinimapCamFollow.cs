@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MinimapCamFollow : MonoBehaviour
 {
-    [SerializeField] private Transform target;
+    public Transform target;
 
     private void Update()
     {
