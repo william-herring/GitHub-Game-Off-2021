@@ -25,5 +25,7 @@ public class TroopSelectionManager : MonoBehaviour
         player.GetComponent<PlayerHealth>().gm = gm;
         
         gameObject.SetActive(false);
+        
+        //bug where player will spawn without new ammunition
     }
 }

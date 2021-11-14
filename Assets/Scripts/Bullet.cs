@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.collider.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            other.gameObject.GetComponent<Enemy>().TakeDamage(damage, isPlayerBullet);
 
             if (isPlayerBullet)
             {

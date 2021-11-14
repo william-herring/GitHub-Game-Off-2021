@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public GameObject bulletPrefab;
     
     [SerializeField] private Transform bulletSpawnTransform;
+    public GameObject bulletCollectable;
 
     private Collider2D _targetCollider;
     private float cooldown;
@@ -80,15 +81,19 @@ public class Enemy : MonoBehaviour
         cooldownTime = cooldown;
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, bool isPlayerBullet)
     {
         health -= amount;
 
-        if (health <= 0)
+        if (!(health <= 0)) return; //Returns to reduce nesting
+        
+        gm.enemies -= 1;
+
+        if (isPlayerBullet)
         {
-            gm.enemies -= 1;
-            Destroy(gameObject);
+            Instantiate(bulletCollectable, transform.position, Quaternion.identity);
         }
+        Destroy(gameObject);
     }
 
     IEnumerator PickTarget()

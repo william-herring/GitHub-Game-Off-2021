@@ -178,6 +178,7 @@ MonoBehaviour:
   rb: {fileID: 3449285883091387333}
   moveSpeed: 300
   anim: {fileID: 3449285883091387334}
+  playerGun: {fileID: 3449285883526533674}
 --- !u!114 &3449285883091387335
 MonoBehaviour:
   m_ObjectHideFlags: 0

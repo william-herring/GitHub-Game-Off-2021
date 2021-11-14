@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed; //Stores player speed
 
     [SerializeField] private Animator anim;
+    [SerializeField] private Gun playerGun;
 
-    [SerializeField] private readonly Dictionary<Vector2, int> walkingStates = new Dictionary<Vector2, int>(); //Maps vector inputs to the z axis rotation
+    private readonly Dictionary<Vector2, int> walkingStates = new Dictionary<Vector2, int>(); //Maps vector inputs to the z axis rotation
 
     private void Awake()
     {
@@ -38,5 +39,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, walkingStates[new Vector2(horizontal, vertical)]);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("BulletCollectable"))
+        {
+            playerGun.ammunition += 1;
+        } 
     }
 }
