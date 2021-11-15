@@ -85,15 +85,17 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
 
-        if (!(health <= 0)) return; //Returns to reduce nesting
-        
-        gm.enemies -= 1;
-
-        if (isPlayerBullet)
+        if (health <= 0)
         {
-            Instantiate(bulletCollectable, transform.position, Quaternion.identity);
+            gm.enemies -= 1;
+
+            if (isPlayerBullet)
+            {
+                Instantiate(bulletCollectable, transform.position, Quaternion.identity);
+            }
+
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 
     IEnumerator PickTarget()

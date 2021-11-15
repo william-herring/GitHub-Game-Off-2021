@@ -63308,7 +63308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1986510874
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63409,7 +63409,7 @@ MonoBehaviour:
   - {fileID: 721250365143106702, guid: 724cf3b4102284505bf3a560c445a25c, type: 3}
   armySize: 5
   creditText: {fileID: 324780079}
-  bulletCollectable: {fileID: 0}
+  bulletCollectable: {fileID: 7889622134966717073, guid: f024dd81372f0483bba0f8ec8742980a, type: 3}
   bulletPrefab: {fileID: 2387877854857499761, guid: 201d0dca51f744546a7b77a67e95fd23, type: 3}
   deathScreen: {fileID: 228975066}
 --- !u!4 &2049939662
