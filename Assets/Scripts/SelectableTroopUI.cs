@@ -35,7 +35,5 @@ public class SelectableTroopUI : MonoBehaviour
         {
             i.SetActive(false);
         }
-
-        gm.credits -= itemCost;
     } 
 }

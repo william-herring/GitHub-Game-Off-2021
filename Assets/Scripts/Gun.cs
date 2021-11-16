@@ -17,6 +17,8 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
+        ammoText = GameObject.Find("AmmoIndicator").GetComponent<TextMeshProUGUI>();
+        
         cooldown = cooldownTime;
         ammoText.text = ammunition.ToString();
         ammoText = GameObject.Find("AmmoIndicator").GetComponent<TextMeshProUGUI>();
@@ -25,6 +27,7 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         cooldownTime -= Time.deltaTime; //Decreasing the timer by the elapsed time since last frame
+        ammoText.text = ammunition.ToString();
 
         if (cooldownTime <= 0)
         {
@@ -49,7 +52,6 @@ public class Gun : MonoBehaviour
         obj.GetComponent<Bullet>().damage = damage;
 
         ammunition -= 1;
-        ammoText.text = ammunition.ToString();
         cooldownTime = cooldown;
     }
 }

@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("BulletCollectable"))
         {
             playerGun.ammunition += 1;
+            Destroy(other.gameObject);
         } 
     }
 }

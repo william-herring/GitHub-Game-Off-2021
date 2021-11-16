@@ -7,12 +7,12 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    private Dictionary<string, int> troopCosts = new Dictionary<string, int>();
+    private Dictionary<int, int> troopCosts = new Dictionary<int, int>();
     
     public float spawnRadius = 5f;
     public int enemies;
     public int team = 1; //Equal to 1 to account for player
-    public int credits = 0;
+    public int credits;
 
     [SerializeField] private Transform enemySpawnLocation;
     [SerializeField] private Transform teamSpawnLocation;
@@ -28,11 +28,11 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        troopCosts.Add("Ant", 0);
-        troopCosts.Add("Bull Ant", 15);
-        troopCosts.Add("Ladybug", 25);
-        troopCosts.Add("Bee", 50);
-        troopCosts.Add("Wasp", 100);
+        troopCosts.Add(0, 0);
+        troopCosts.Add(1, 15);
+        troopCosts.Add(2, 25);
+        troopCosts.Add(3, 50);
+        troopCosts.Add(4, 100);
     }
 
     private void Update()
@@ -148,11 +148,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Respawn(string troopType)
+    public void Respawn(int troopIndex)
     {
-        if (credits >= troopCosts[troopType])
+        if (credits >= troopCosts[troopIndex])
         {
-            credits -= troopCosts[troopType];
+            credits -= troopCosts[troopIndex];
         }
     }
 }
