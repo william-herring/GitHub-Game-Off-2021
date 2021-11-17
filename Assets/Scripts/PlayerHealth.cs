@@ -6,6 +6,12 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float health = 4f;
     public GameManager gm;
 
+    private void Start()
+    {
+        gm.healthSlider.maxValue = health;
+        gm.healthSlider.value = health;
+    }
+
     private void Update()
     {
         //FOR TESTING PURPOSES ONLY
@@ -21,8 +27,11 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            gm.healthSlider.value = 0;
             gm.deathScreen.SetActive(true);
             Destroy(gameObject);
         }
+
+        gm.healthSlider.value = health;
     }
 }

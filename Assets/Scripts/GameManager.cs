@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Pathfinding;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject bulletPrefab;
     public GameObject deathScreen;
+    public Slider healthSlider;
 
     private void Awake()
     {

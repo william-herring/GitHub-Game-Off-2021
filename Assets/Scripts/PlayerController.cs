@@ -43,10 +43,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("BulletCollectable"))
-        {
-            playerGun.ammunition += 1;
-            Destroy(other.gameObject);
-        } 
+        if (!other.CompareTag("BulletCollectable")) return; //Reduces nesting
+        
+        playerGun.ammunition += 1;
+        Destroy(other.gameObject);
     }
 }
